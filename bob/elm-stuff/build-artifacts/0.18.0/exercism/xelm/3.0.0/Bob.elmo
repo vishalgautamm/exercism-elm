@@ -1,0 +1,11 @@
+var _exercism$xelm$Bob$hey = function (content) {
+	var isYelling = function (content) {
+		return _elm_lang$core$Native_Utils.eq(
+			_elm_lang$core$String$toUpper(content),
+			content) && (!_elm_lang$core$Native_Utils.eq(
+			_elm_lang$core$String$toLower(content),
+			content));
+	};
+	return isYelling(content) ? 'Whoa, chill out!' : (A2(_elm_lang$core$String$endsWith, '?', content) ? 'Sure.' : (_elm_lang$core$String$isEmpty(
+		_elm_lang$core$String$trim(content)) ? 'Fine. Be that way!' : 'Whatever.'));
+};
